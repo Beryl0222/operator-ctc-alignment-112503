@@ -1,0 +1,9 @@
+{
+  "product": "变长语音训练的 CTC 损失与转写交接",
+  "provenance": "所有数值、实体和事件均为本地合成资料，不代表真实用户或已发生事故。",
+  "format_revision": 1,
+  "tensors": {
+    "logits": "data/tensors/logits.json",
+    "upstream": "data/tensors/upstream.json"
+  }
+}

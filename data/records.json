@@ -1,0 +1,81 @@
+{
+  "recordings": [
+    {
+      "recording_id": "rec-a",
+      "revision": 1,
+      "valid_frames": 7,
+      "targets": [
+        1,
+        1,
+        2
+      ],
+      "weight": 2
+    },
+    {
+      "recording_id": "rec-b",
+      "revision": 1,
+      "valid_frames": 3,
+      "targets": [],
+      "weight": 1
+    },
+    {
+      "recording_id": "rec-c",
+      "revision": 1,
+      "valid_frames": 4,
+      "targets": [
+        3,
+        2
+      ],
+      "weight": 0.5
+    }
+  ],
+  "vocabulary": {
+    "revision": "v1",
+    "tokens": {
+      "0": "<blank>",
+      "1": "你",
+      "2": "好",
+      "3": "安",
+      "4": "静"
+    }
+  },
+  "allowed_prefixes": [
+    [],
+    [
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      2
+    ],
+    [
+      3
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      4
+    ]
+  ],
+  "beam_widths": [
+    1,
+    4,
+    12
+  ],
+  "microbatches": [
+    [
+      0,
+      1
+    ],
+    [
+      2
+    ]
+  ]
+}

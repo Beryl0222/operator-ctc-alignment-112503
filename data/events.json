@@ -1,0 +1,65 @@
+[
+  {
+    "id": "crop-and-empty-target",
+    "events": [
+      {
+        "kind": "crop",
+        "recording_id": "rec-a",
+        "new_frames": 2,
+        "new_revision": 2
+      },
+      {
+        "kind": "train_window",
+        "ids": [
+          "rec-a",
+          "rec-b",
+          "rec-c"
+        ]
+      },
+      {
+        "kind": "decode",
+        "recording_id": "rec-a"
+      }
+    ]
+  },
+  {
+    "id": "nonfinite-window",
+    "events": [
+      {
+        "kind": "set_logit",
+        "index": [
+          2,
+          1,
+          2
+        ],
+        "value": "nan"
+      },
+      {
+        "kind": "train_window",
+        "ids": [
+          "rec-b",
+          "rec-c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vocabulary-revision",
+    "events": [
+      {
+        "kind": "vocabulary",
+        "revision": "v2",
+        "swap": [
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "lookup_result",
+        "recording_id": "rec-a",
+        "recording_revision": 1,
+        "vocabulary_revision": "v1"
+      }
+    ]
+  }
+]
