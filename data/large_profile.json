@@ -1,0 +1,49 @@
+{
+  "id": "long-ctc-recordings",
+  "parameters": {
+    "blank": 0,
+    "recording_ids": [
+      "long-a",
+      "long-b"
+    ]
+  },
+  "arrays": {
+    "logits": {
+      "shape": [
+        2,
+        4096,
+        64
+      ],
+      "pattern": "uniform",
+      "dtype": "float32",
+      "low": -5,
+      "high": 5
+    },
+    "targets": {
+      "shape": [
+        2,
+        256
+      ],
+      "pattern": "integers",
+      "dtype": "int64",
+      "low": 1,
+      "high": 64
+    },
+    "lengths": {
+      "shape": [
+        2
+      ],
+      "pattern": "constant",
+      "dtype": "int64",
+      "value": 4096
+    },
+    "weights": {
+      "shape": [
+        2
+      ],
+      "pattern": "constant",
+      "dtype": "float32",
+      "value": 1
+    }
+  }
+}
